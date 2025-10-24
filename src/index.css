@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Agricultural color palette - HSL only */
+    /* Agricultural color palette - HSL only - LIGHT MODE */
     --background: 120 40% 98%;
     --foreground: 145 70% 12%;
 
@@ -60,6 +60,56 @@ All colors MUST be HSL.
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    /* Agricultural color palette - DARK MODE */
+    --background: 145 50% 8%;
+    --foreground: 120 30% 95%;
+
+    --card: 145 40% 12%;
+    --card-foreground: 120 30% 95%;
+
+    --popover: 145 45% 10%;
+    --popover-foreground: 120 30% 95%;
+
+    /* Brighter green for dark mode visibility */
+    --primary: 142 76% 45%;
+    --primary-foreground: 145 70% 12%;
+    --primary-light: 145 65% 55%;
+    --primary-glow: 145 70% 65%;
+
+    /* Adjust secondary for dark mode */
+    --secondary: 142 70% 45%;
+    --secondary-foreground: 145 70% 12%;
+
+    --muted: 145 30% 18%;
+    --muted-foreground: 120 20% 65%;
+
+    /* Golden accent stays visible */
+    --accent: 45 93% 58%;
+    --accent-foreground: 145 70% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 145 30% 22%;
+    --input: 145 35% 20%;
+    --ring: 142 76% 50%;
+
+    /* Earth tones adjusted */
+    --earth-brown: 25 45% 35%;
+    --earth-light: 35 25% 28%;
+    
+    /* Gradients for dark mode */
+    --gradient-primary: linear-gradient(135deg, hsl(145 50% 25%), hsl(145 60% 35%));
+    --gradient-harvest: linear-gradient(135deg, hsl(142 70% 45%), hsl(45 93% 58%));
+    --gradient-earth: linear-gradient(180deg, hsl(145 50% 8%), hsl(145 45% 12%));
+    
+    /* Enhanced shadows for dark mode */
+    --shadow-soft: 0 4px 20px hsl(0 0% 0% / 0.4);
+    --shadow-strong: 0 8px 32px hsl(0 0% 0% / 0.6);
+    --shadow-glow: 0 0 40px hsl(142 76% 45% / 0.3);
   }
 }
 

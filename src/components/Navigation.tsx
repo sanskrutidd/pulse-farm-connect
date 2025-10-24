@@ -6,7 +6,7 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
-    { path: "/", icon: LayoutDashboard, label: "Dashboard" },
+    { path: "/dashboard", icon: LayoutDashboard, label: "Dashboard" },
     { path: "/schemes", icon: FileText, label: "Schemes" },
     { path: "/crops", icon: Leaf, label: "Crop Advisor" },
     { path: "/services", icon: Plane, label: "Services" },
@@ -17,7 +17,7 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 h-screen w-64 bg-gradient-to-b from-primary via-primary-light to-primary shadow-strong p-6 flex flex-col">
       {/* Logo */}
-      <Link to="/" className="flex items-center gap-3 mb-8">
+      <Link to="/dashboard" className="flex items-center gap-3 mb-8">
         <div className="h-12 w-12 rounded-xl bg-white shadow-glow flex items-center justify-center">
           <Sprout className="h-6 w-6 text-primary" />
         </div>
@@ -51,7 +51,7 @@ const Navigation = () => {
       </div>
 
       {/* Logout Button */}
-      <Link to="/auth">
+      <Link to="/">
         <Button variant="outline" className="w-full gap-2 bg-white/10 text-white border-white/20 hover:bg-white/20">
           <LogOut className="h-4 w-4" />
           Logout

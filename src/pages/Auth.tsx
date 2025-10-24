@@ -24,7 +24,7 @@ const Auth = () => {
         title: "Welcome back!",
         description: "Successfully logged in to GreenPulse",
       });
-      navigate("/");
+      navigate("/dashboard");
     }, 1000);
   };
 
@@ -39,7 +39,7 @@ const Auth = () => {
         title: "Account created!",
         description: "Welcome to GreenPulse",
       });
-      navigate("/");
+      navigate("/dashboard");
     }, 1000);
   };
 
