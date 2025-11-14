@@ -12,6 +12,7 @@ import Factories from "./pages/Factories";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 import Navigation from "./components/Navigation";
+import MotorControl from './components/MotorControl' // Import the component
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,8 @@ const App = () => (
           <Route path="/crops" element={<AppLayout><CropAdvisor /></AppLayout>} />
           <Route path="/services" element={<AppLayout><Services /></AppLayout>} />
           <Route path="/factories" element={<AppLayout><Factories /></AppLayout>} />
+          {/* Here is the new route for your MotorControl component */}
+          <Route path="/motor" element={<AppLayout><MotorControl /></AppLayout>} />
           <Route path="/settings" element={<AppLayout><Settings /></AppLayout>} />
           <Route path="*" element={<NotFound />} />
         </Routes>
